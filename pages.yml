@@ -1,0 +1,173 @@
+media:
+  input: images
+  output: images
+  rename: safe
+  categories: [image]
+
+content:
+  - name: site
+    label: 網站內容
+    type: file
+    path: content.json
+    format: json
+    operations:
+      delete: false
+    fields:
+      - name: brand
+        label: 品牌名稱（左上角標題）
+        type: string
+      - name: brandSub
+        label: 品牌副標
+        type: string
+      - name: hero
+        label: 首頁主視覺
+        type: object
+        fields:
+          - name: image
+            label: 首頁主圖（橫式照片，寬 2000px 以上）
+            type: image
+          - name: title
+            label: 主標題
+            type: text
+          - name: sub
+            label: 副標
+            type: text
+          - name: tagline
+            label: 主標下方英文小字
+            type: string
+          - name: script
+            label: 照片右下英文手寫字
+            type: text
+          - name: handle
+            label: 社群帳號（頁尾）
+            type: string
+      - name: servicesSub
+        label: 服務項目副標
+        type: string
+      - name: services
+        label: 服務項目
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{index}. {title}"
+        fields:
+          - name: title
+            label: 服務名稱
+            type: string
+          - name: cover
+            label: 卡片封面（留空則用第一張作品圖）
+            type: image
+          - name: tags
+            label: 標籤（用 ｜ 分隔）
+            type: string
+          - name: desc
+            label: 說明（第一句會顯示在卡片上）
+            type: text
+          - name: images
+            label: 作品圖片
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{index}. {caption}"
+            fields:
+              - name: id
+                label: 圖片
+                type: image
+              - name: caption
+                label: 圖說（可留空）
+                type: string
+      - name: banner
+        label: 成功案例
+        type: object
+        fields:
+          - name: title
+            label: 案例標題
+            type: text
+          - name: text
+            label: 案例說明
+            type: text
+          - name: caption
+            label: 底部小字
+            type: text
+          - name: image
+            label: 備用圖片（目前未顯示）
+            type: image
+            hidden: true
+      - name: charts
+        label: 成效圖表
+        description: 月份、成果、成果成本用逗號分隔，三組數量要一樣。
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{index}. {title}"
+        fields:
+          - name: title
+            label: 圖表標題
+            type: string
+          - name: labels
+            label: 月份（例：04月, 05月, 06月）
+            type: string
+          - name: results
+            label: 成果（例：115, 151, 180）
+            type: string
+          - name: cost
+            label: 成果成本（例：122.3, 102, 83.5）
+            type: string
+      - name: caseImages
+        label: 案例圖片（顯示在圖表下方）
+        type: object
+        list: true
+        fields:
+          - name: id
+            label: 圖片
+            type: image
+          - name: caption
+            label: 圖說
+            type: string
+      - name: results
+        label: 成效數據
+        type: object
+        fields:
+          - name: title
+            label: 成效標題
+            type: string
+          - name: s1v
+            label: 數據一
+            type: string
+          - name: s1l
+            label: 數據一說明
+            type: string
+          - name: s2v
+            label: 數據二
+            type: string
+          - name: s2l
+            label: 數據二說明
+            type: string
+      - name: servicesTitle
+        label: 關於我們 大標題（〔 〕內的字會變綠色）
+        type: text
+      - name: servicesIntro
+        label: 關於我們 內文
+        type: text
+      - name: contact
+        label: 聯絡資訊（留空不顯示）
+        type: object
+        fields:
+          - name: line
+            label: LINE 官方帳號 ID
+            type: string
+          - name: phone
+            label: 電話
+            type: string
+          - name: email
+            label: Email
+            type: string
+          - name: instagram
+            label: Instagram 帳號（不含 @）
+            type: string
+      - name: footer
+        label: 頁尾文字
+        type: string

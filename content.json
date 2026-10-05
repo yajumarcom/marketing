@@ -1,0 +1,264 @@
+{
+  "banner": {
+    "caption": "",
+    "image": "images/video-01.jpg",
+    "text": "精準受眾｜素材建議｜數據分析",
+    "title": "廣告投放代操"
+  },
+  "brand": "行銷雅起來",
+  "brandSub": "雅居廚櫃 行銷企劃部",
+  "charts": [
+    {
+      "cost": "122.3, 102.0, 83.5, 50.4",
+      "labels": "04月, 05月, 06月, 07月",
+      "results": "115, 151, 180, 308",
+      "title": "成果與成果成本趨勢・依月份"
+    },
+    {
+      "cost": "80.8, 64.5, 55.4",
+      "labels": "06月, 07月, 08月",
+      "results": "75, 129, 283",
+      "title": "成果與成果成本趨勢・依月份"
+    }
+  ],
+  "contact": {
+    "email": "hq.marcom@yaju.com.tw",
+    "instagram": "ya_chill.life",
+    "line": "@794wrlfd",
+    "phone": "0900-605-385"
+  },
+  "footer": "© 2026 行銷雅起來　雅居廚櫃 行銷企劃部",
+  "hero": {
+    "handle": "@ya_chill.life",
+    "image": "images/video-05.jpg",
+    "script": "Brand\nGrow Together",
+    "sub": "從品牌策略、創意發想到實際執行，\n讓每一個想法，都真正發生。",
+    "tagline": "Marketing × Brand × Growth",
+    "title": "不只做行銷，\n我們陪你，一起讓品牌往前走。"
+  },
+  "results": {
+    "s1l": "協助客戶月詢問量 3 個月內成長",
+    "s1v": "+160%",
+    "s2l": "訊息成本減少近 60%",
+    "s2v": "−60%",
+    "title": "近期成效："
+  },
+  "services": [
+    {
+      "desc": "建立品牌聲量，持續經營與受眾的每一次互動。從內容企劃到視覺製作，讓社群不只是發文，而是累積品牌價值。",
+      "images": [
+        {
+          "caption": "知識類型貼文",
+          "id": "images/social-04.jpg"
+        },
+        {
+          "caption": "時事議題懶人包",
+          "id": "images/social-05.jpg"
+        },
+        {
+          "caption": "",
+          "id": "images/social-01.jpg"
+        },
+        {
+          "caption": "",
+          "id": "images/social-02.jpg"
+        },
+        {
+          "caption": "節慶貼文",
+          "id": "images/social-03.jpg"
+        },
+        {
+          "caption": "每月貼文系列規劃",
+          "id": "images/social-06.jpg"
+        }
+      ],
+      "tags": "內容規劃｜圖文設計｜成效分析",
+      "title": "社群經營代操",
+      "cover": ""
+    },
+    {
+      "desc": "打造一致且有辨識度的品牌形象。從 Logo、色彩、字體到品牌應用，建立完整的視覺識別系統。",
+      "images": [
+        {
+          "caption": "雅居集團提袋",
+          "id": "images/cis-01.jpg"
+        },
+        {
+          "caption": "產品保養手冊",
+          "id": "images/cis-02.jpg"
+        },
+        {
+          "caption": "品牌贈品包裝",
+          "id": "images/cis-03.jpg"
+        },
+        {
+          "caption": "集團各品牌名片",
+          "id": "images/cis-04.jpg"
+        }
+      ],
+      "tags": "企業CIS｜輔銷物設計｜品牌視覺延伸",
+      "title": "企業形象識別",
+      "cover": ""
+    },
+    {
+      "desc": "讓每一分廣告預算，都更接近真正的生意。透過受眾策略、素材測試與數據優化，提升廣告效益與轉換。",
+      "images": [
+        {
+          "caption": "拾季設計廣告素材",
+          "id": "images/ads-01.jpg"
+        },
+        {
+          "caption": "系統櫃專案廣告",
+          "id": "images/ads-02.jpg"
+        },
+        {
+          "caption": "廚具專案廣告",
+          "id": "images/ads-03.jpg"
+        }
+      ],
+      "tags": "精準受眾｜素材建議｜數據分析",
+      "title": "廣告投放代操",
+      "cover": ""
+    },
+    {
+      "desc": "用影像說好品牌故事，讓內容成為持續帶來流量的資產。從主題發想、腳本企劃到拍攝方向，打造符合品牌與行銷目標的影音內容。",
+      "images": [
+        {
+          "caption": "11,000 次觀看",
+          "id": "images/video-01.jpg"
+        },
+        {
+          "caption": "12,000 次觀看",
+          "id": "images/video-02.jpg"
+        },
+        {
+          "caption": "Reels 空間導覽",
+          "id": "images/video-03.jpg"
+        },
+        {
+          "caption": "6,370 次觀看",
+          "id": "images/video-04.jpg"
+        },
+        {
+          "caption": "5,280 次觀看",
+          "id": "images/video-05.jpg"
+        }
+      ],
+      "tags": "內容企劃｜腳本規劃｜拍攝剪輯",
+      "title": "影音企劃製作",
+      "cover": ""
+    },
+    {
+      "desc": "協助活動流程規劃、整體視覺設計、宣傳物製作與輸出接洽，讓品牌活動從想法到執行，都能有效落地。",
+      "images": [
+        {
+          "caption": "雅居集團春日微醺野餐日",
+          "id": "images/event-01.jpg"
+        },
+        {
+          "caption": "活動主視覺",
+          "id": "images/event-02.jpg"
+        },
+        {
+          "caption": "2024 雅居集團紅毯派對",
+          "id": "images/event-03.jpg"
+        },
+        {
+          "caption": "紅毯派對背板設計",
+          "id": "images/event-04.jpg"
+        },
+        {
+          "caption": "尾牙抽獎頒獎",
+          "id": "images/event-05.jpg"
+        },
+        {
+          "caption": "",
+          "id": "images/event-06.jpg"
+        }
+      ],
+      "tags": "活動規劃｜流程設計｜現場執行",
+      "title": "活動策略規劃",
+      "cover": ""
+    },
+    {
+      "desc": "讓品牌被更多人看見，也讓信任從第三方開始累積。透過新聞、媒體與口碑內容，擴大品牌曝光與公信力。",
+      "images": [
+        {
+          "caption": "風傳媒報導",
+          "id": "images/news-01.jpg"
+        },
+        {
+          "caption": "經濟日報報導",
+          "id": "images/news-02.jpg"
+        }
+      ],
+      "tags": "記者發稿｜具公信力｜稿件撰寫",
+      "title": "新聞口碑曝光",
+      "cover": ""
+    },
+    {
+      "desc": "讓每一次品牌曝光，都有一致的視覺語言。涵蓋數位廣告、數位文宣與實體宣傳物，從社群素材、DM、菜單到招牌，完整串聯品牌線上與線下視覺。",
+      "images": [
+        {
+          "caption": "META／GDN 廣告素材",
+          "id": "images/graphic-01.jpg"
+        },
+        {
+          "caption": "",
+          "id": "images/graphic-02.jpg"
+        },
+        {
+          "caption": "",
+          "id": "images/graphic-03.jpg"
+        },
+        {
+          "caption": "家具展廣告素材",
+          "id": "images/graphic-04.jpg"
+        },
+        {
+          "caption": "品牌參展 DM",
+          "id": "images/graphic-05.jpg"
+        },
+        {
+          "caption": "餐飲品牌文宣",
+          "id": "images/graphic-06.jpg"
+        },
+        {
+          "caption": "",
+          "id": "images/graphic-07.jpg"
+        },
+        {
+          "caption": "",
+          "id": "images/graphic-08.jpg"
+        },
+        {
+          "caption": "吐司品牌產品圖",
+          "id": "images/graphic-09.jpg"
+        },
+        {
+          "caption": "",
+          "id": "images/graphic-10.jpg"
+        },
+        {
+          "caption": "",
+          "id": "images/graphic-11.jpg"
+        },
+        {
+          "caption": "LINE OA 圖文選單",
+          "id": "images/graphic-12.jpg"
+        },
+        {
+          "caption": "LINE OA 圖文選單（聖誕版）",
+          "id": "images/graphic-13.jpg"
+        }
+      ],
+      "tags": "數位廣告｜文宣菜單｜招牌設計",
+      "title": "平面視覺設計",
+      "cover": ""
+    }
+  ],
+  "servicesIntro": "我們是雅居集團的行銷團隊，長期經營旗下廚櫃、系統櫃與室內設計品牌，也協助餐飲、醫美、家居等不同產業客戶。以下是我們能為你做的事。",
+  "servicesSub": "整合行銷資源，打造屬於你的品牌成長藍圖。",
+  "servicesTitle": "每一個品牌，都值得被〔好好經營〕。",
+  "caseImages": []
+}

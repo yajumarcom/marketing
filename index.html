@@ -1,0 +1,544 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>雅居廚櫃 行銷企劃部｜品牌行銷服務</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;600;700&family=Noto+Sans+TC:wght@400;500&family=Cormorant+Garamond:wght@500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FAF5EC;--card:#FFFDF8;--ink:#2B231C;--ink-2:#6E6357;--green:#2F5A4C;--green-2:#244A3E;--sage:#C9D8C5;--peach:#F1D2AE;--line:rgba(60,45,30,.12);
+  --serif:"Noto Serif TC","Songti TC",serif;--sans:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;--lat:"Cormorant Garamond",Georgia,serif;--script:"Great Vibes",cursive;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1A1714;--card:#231F1A;--ink:#F2EADF;--ink-2:#B8AC9E;--green:#5E9A85;--green-2:#3F7464;--sage:#33463C;--peach:#4A3828;--line:rgba(255,255,255,.12);color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#1A1714;--card:#231F1A;--ink:#F2EADF;--ink-2:#B8AC9E;--green:#5E9A85;--green-2:#3F7464;--sage:#33463C;--peach:#4A3828;--line:rgba(255,255,255,.12);color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 84px)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.75;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--green);outline-offset:3px}
+.pre{white-space:pre-line}
+.wrap{width:min(1200px,100% - 48px);margin-inline:auto}
+.btn-g{display:inline-flex;align-items:center;gap:10px;background:var(--green);color:#fff;border-radius:999px;padding:12px 26px;font:500 15px var(--sans);text-decoration:none;letter-spacing:.06em;border:0;cursor:pointer;white-space:nowrap}
+.btn-g:hover{background:var(--green-2)}
+.eyebrow{font:600 12px var(--lat);letter-spacing:.42em;text-transform:uppercase;color:var(--ink-2);margin:0 0 6px}
+.sec-h{text-align:center;margin-bottom:34px}
+.sec-h h2{font:700 clamp(28px,3vw,36px)/1.3 var(--serif);margin:0 0 8px;letter-spacing:.06em}
+.sec-h p{margin:0;color:var(--ink-2);letter-spacing:.04em}
+
+/* header */
+.hd{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.hd .wrap{display:flex;align-items:center;justify-content:space-between;height:78px;gap:20px}
+.logo{text-decoration:none;line-height:1.15}
+.logo b{display:block;font:700 23px var(--serif);letter-spacing:.08em}
+.logo small{display:block;font:500 13px var(--serif);letter-spacing:.32em;color:var(--ink-2);margin-top:3px}
+.hd nav{display:flex;gap:34px;font-size:14.5px;letter-spacing:.06em}
+.hd nav a{text-decoration:none}
+.hd nav a:hover{color:var(--green)}
+.menu{display:none;background:none;border:0;width:42px;height:42px;cursor:pointer;color:var(--ink)}
+.menu span{display:block;height:1.5px;background:currentColor;margin:6px 8px}
+@media(max-width:900px){.hd nav{position:absolute;top:78px;left:0;right:0;flex-direction:column;gap:0;background:var(--bg);border-bottom:1px solid var(--line);display:none}
+  .hd nav.on{display:flex}.hd nav a{padding:14px 24px;border-top:1px solid var(--line)}.menu{display:block}.hd .btn-g{display:none}}
+
+/* hero */
+.hero{position:relative;overflow:hidden;min-height:min(78vh,640px);display:flex;align-items:center;background:var(--bg)}
+.hero-ph{position:absolute;top:0;right:0;bottom:0;width:62%}
+.hero-ph{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 34%);mask-image:linear-gradient(90deg,transparent 0,#000 34%)}
+.hero-ph img{width:100%;height:118%;object-fit:cover;object-position:center top}
+.hero-wash{position:absolute;inset:0;pointer-events:none;background:
+  linear-gradient(90deg,var(--bg) 0%,color-mix(in srgb,var(--bg) 92%,transparent) 34%,color-mix(in srgb,var(--bg) 40%,transparent) 48%,transparent 62%),
+  radial-gradient(60% 70% at 4% 96%,color-mix(in srgb,var(--sage) 85%,transparent) 0,transparent 62%),
+  radial-gradient(42% 50% at 40% 6%,color-mix(in srgb,var(--peach) 75%,transparent) 0,transparent 66%)}
+.hero-curve{position:absolute;left:0;right:0;bottom:-1px;height:110px;pointer-events:none}
+.hero-curve path{fill:var(--bg)}
+.hero .wrap{position:relative;z-index:2;padding:80px 0 110px}
+.hero h1{font:700 clamp(30px,3.7vw,48px)/1.45 var(--serif);margin:0 0 22px;letter-spacing:.04em;max-width:16em}
+.hero .sub{font-size:clamp(15px,1.4vw,17px);letter-spacing:.14em;color:var(--ink);margin:0 0 30px;max-width:26em}
+.hero .tag{font:600 12px var(--lat);letter-spacing:.46em;text-transform:uppercase;color:var(--ink-2);margin:56px 0 0}
+.script{position:absolute;right:4%;bottom:34px;z-index:2;color:#fff;font:400 clamp(40px,5vw,66px)/.9 var(--script);text-align:right;text-shadow:0 2px 18px rgba(0,0,0,.25);transform:rotate(-12deg);pointer-events:none}
+.script span{display:block}.script span:nth-child(2){padding-left:.8em}
+@media(max-width:760px){.hero{flex-direction:column;align-items:stretch;min-height:0}
+  .hero-ph{position:relative;width:100%;height:320px;order:2;margin-top:-60px;-webkit-mask-image:linear-gradient(180deg,transparent 0,#000 30%);mask-image:linear-gradient(180deg,transparent 0,#000 30%)}
+  .hero-wash{background:linear-gradient(180deg,var(--bg) 0%,color-mix(in srgb,var(--bg) 90%,transparent) 48%,transparent 66%),radial-gradient(70% 40% at 0% 40%,color-mix(in srgb,var(--sage) 70%,transparent) 0,transparent 70%),radial-gradient(60% 30% at 100% 10%,color-mix(in srgb,var(--peach) 70%,transparent) 0,transparent 70%)}
+  .hero .wrap{padding:40px 0 24px}.hero .tag{display:none}.script{bottom:28px}}
+
+/* services */
+.services{padding:70px 0 40px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px}
+.sc{position:relative;background:var(--card);border-radius:6px;box-shadow:0 1px 0 var(--line),0 10px 30px -18px rgba(60,40,20,.35);text-align:left;font:inherit;color:inherit;border:0;padding:0;cursor:pointer;display:flex;flex-direction:column;overflow:hidden}
+.sc .ph{position:relative;aspect-ratio:16/9.4;background:var(--sage);overflow:hidden}
+.sc .ph img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+.sc:hover .ph img{transform:scale(1.04)}
+.sc .ph::after{content:"";position:absolute;left:0;right:0;bottom:0;height:46%;background:linear-gradient(0deg,var(--card),transparent)}
+.sc .no{font:500 34px/1 var(--lat);color:var(--ink)}
+.sc.v .no{position:absolute;left:16px;top:calc(100% * 0 + 0px)}
+.sc h3{font:700 18px/1.4 var(--serif);letter-spacing:.06em;margin:0 0 6px}
+.sc p{font-size:13.5px;line-height:1.7;color:var(--ink-2);margin:0;padding-right:44px}
+.sc .arr{position:absolute;right:14px;bottom:16px;width:30px;height:30px;border-radius:50%;border:1.3px solid var(--ink);display:grid;place-items:center;font-size:14px;transition:background .2s,color .2s}
+.sc:hover .arr{background:var(--green);border-color:var(--green);color:#fff}
+.sc.v .body{position:relative;padding:0 16px 18px;margin-top:-38px;z-index:1;flex:1}
+.sc.v .no{position:static;display:block;margin-bottom:12px}
+.sc.h{flex-direction:row;align-items:stretch;min-height:150px}
+.sc.h .ph{width:44%;aspect-ratio:auto;flex:none;margin:6px 0 6px 6px;border-radius:3px}
+.sc.h .ph::after{display:none}
+.sc.h .body{padding:14px 16px 18px 22px;flex:1}
+.sc.h .no{display:block;margin-bottom:4px}
+@media(max-width:1000px){.grid4{grid-template-columns:repeat(2,1fr)}.grid3{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){.grid4,.grid3{grid-template-columns:1fr;gap:12px}.grid3{margin-top:12px}
+  .sc.v{flex-direction:row;min-height:120px}.sc.v .ph{width:38%;aspect-ratio:auto;flex:none;margin:6px 0 6px 6px;border-radius:3px}.sc.v .ph::after{display:none}
+  .sc.v .body,.sc.h .body{margin-top:0;padding:12px 14px 14px 18px}.sc.h .ph{width:38%}.sc .no{font-size:26px;margin-bottom:2px!important}.sc h3{font-size:16px}.sc p{font-size:12.5px}}
+
+/* cases */
+.cases{padding:90px 0}
+.case{display:grid;grid-template-columns:1.35fr 1fr;gap:56px;align-items:center}
+.case .ph{border-radius:6px;overflow:hidden;aspect-ratio:16/10;background:var(--sage);box-shadow:0 18px 40px -26px rgba(60,40,20,.5)}
+.case .ph img{width:100%;height:100%;object-fit:cover}
+.case h3{font:700 clamp(24px,2.6vw,32px)/1.4 var(--serif);margin:0 0 12px;letter-spacing:.04em}
+.case .txt{color:var(--ink-2);margin:0 0 30px}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:20px;border-top:1px solid var(--line);padding-top:24px}
+.stats b{display:block;font:600 clamp(44px,5vw,64px)/1 var(--lat);color:var(--green)}
+.stats span{font-size:13.5px;color:var(--ink-2)}
+.case small{display:block;margin-top:18px;font-size:12.5px;color:var(--ink-2)}
+@media(max-width:860px){.case{grid-template-columns:1fr;gap:28px}.cases{padding:64px 0}}
+
+/* charts */
+.charts{display:grid;gap:16px}
+.chart{background:var(--card);border-radius:6px;padding:18px 18px 12px;box-shadow:0 1px 0 var(--line),0 14px 34px -26px rgba(60,40,20,.45)}
+.chart h4{font:600 14px var(--sans);margin:0 0 4px;letter-spacing:.04em}
+.chart svg{width:100%;height:auto;display:block;overflow:visible}
+.chart .lg{display:flex;gap:18px;justify-content:center;font-size:12.5px;color:var(--ink-2);margin-top:2px}
+.chart .lg i{display:inline-block;width:18px;height:2px;vertical-align:middle;margin-right:6px;border-radius:2px}
+.c-res{--c:var(--green)}.c-cost{--c:#B8822E}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .c-cost{--c:#D9A55A}}
+.case-r h3 small{display:block;font:500 13px var(--sans);color:var(--ink-2);letter-spacing:.1em;margin-bottom:6px}
+/* about */
+.about{padding:20px 0 90px}
+.about-box{background:var(--card);border-radius:6px;padding:56px;display:grid;grid-template-columns:1.4fr 1fr;gap:48px;align-items:center;box-shadow:0 1px 0 var(--line)}
+.about h3{font:700 clamp(24px,2.6vw,32px)/1.5 var(--serif);margin:0 0 14px;letter-spacing:.04em}
+.about h3 .ac{color:var(--green)}
+.about p{margin:0;color:var(--ink-2)}
+.nums{display:flex;gap:44px;justify-content:flex-end}
+.nums b{display:block;font:600 56px/1 var(--lat);color:var(--ink)}
+.nums span{font-size:13px;color:var(--ink-2)}
+@media(max-width:860px){.about-box{grid-template-columns:1fr;padding:32px 24px}.nums{justify-content:flex-start}}
+
+/* contact */
+.contact{background:var(--green-2);color:#F4EFE6;position:relative;overflow:hidden}
+.contact::before{content:"";position:absolute;inset:auto -10% -40% 40%;height:120%;background:radial-gradient(closest-side,rgba(241,210,174,.22),transparent);pointer-events:none}
+.contact .wrap{position:relative;padding:80px 0 70px;display:grid;grid-template-columns:1fr 1.2fr;gap:48px;align-items:end}
+.contact .eyebrow{color:rgba(244,239,230,.7)}
+.contact h2{font:700 clamp(28px,3vw,38px)/1.4 var(--serif);margin:0 0 12px;letter-spacing:.06em}
+.contact p{margin:0;opacity:.8}
+.contact dl{display:grid;grid-template-columns:1fr 1fr;gap:22px 30px;margin:0}
+.contact dl>div{min-width:0;border-top:1px solid rgba(244,239,230,.22);padding-top:12px}
+.contact dt{font-size:12.5px;opacity:.7}
+.contact dd{margin:2px 0 0;font:500 17px var(--sans);word-break:break-all}
+.contact dd a{text-decoration:none}
+.contact .script2{font:400 clamp(44px,5vw,64px)/1 var(--script);opacity:.85;margin-top:18px}
+@media(max-width:860px){.contact .wrap{grid-template-columns:1fr;padding:60px 0}.contact dl{grid-template-columns:1fr}}
+footer{background:var(--green-2);color:rgba(244,239,230,.6);font-size:12.5px;border-top:1px solid rgba(244,239,230,.14)}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:18px 0 26px}
+
+/* detail sheet */
+.sheet{position:fixed;inset:0;z-index:55;background:var(--bg);overflow:auto;display:none;padding-bottom:calc(env(safe-area-inset-bottom,0px) + 40px)}
+.sheet.on{display:block}
+.sheet .bar{position:sticky;top:0;z-index:2;display:flex;justify-content:space-between;align-items:center;padding:calc(env(safe-area-inset-top,0px) + 14px) 24px 14px;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.sheet .bar .n{display:flex;gap:8px}
+.icon{width:40px;height:40px;border-radius:50%;border:1.3px solid var(--ink);background:none;color:var(--ink);font-size:16px;cursor:pointer;display:grid;place-items:center}
+.sheet .in{width:min(1200px,100% - 40px);margin:0 auto}
+.sheet header{display:grid;grid-template-columns:auto 1fr;gap:16px 40px;padding:40px 0;align-items:end}
+.sheet .big{font:500 clamp(72px,9vw,120px)/.8 var(--lat);color:var(--green)}
+.sheet h2{font:700 clamp(28px,3.4vw,40px)/1.3 var(--serif);margin:0 0 4px;letter-spacing:.06em}
+.sheet .tg{font-size:14px;color:var(--ink-2);margin:0 0 12px;letter-spacing:.06em}
+.sheet .ds{margin:0;max-width:40em;color:var(--ink-2)}
+@media(max-width:640px){.sheet header{grid-template-columns:1fr}}
+.gallery{columns:3 260px;column-gap:14px}
+.gallery figure{margin:0 0 14px;break-inside:avoid;cursor:zoom-in;border-radius:6px;overflow:hidden;background:var(--card);box-shadow:0 1px 0 var(--line)}
+.gallery img{width:100%;height:auto}
+.gallery figcaption{font-size:13px;color:var(--ink-2);padding:8px 12px 10px}
+.gallery .empty{column-span:all;border:1.5px dashed var(--line);border-radius:6px;padding:56px;text-align:center;color:var(--ink-2)}
+.lb{position:fixed;inset:0;z-index:70;background:rgba(22,18,14,.94);display:none;align-items:center;justify-content:center;padding:24px}
+.lb.on{display:flex}
+.lb img{max-height:86vh;max-width:min(1200px,100%);width:auto;border-radius:4px}
+.lb button{position:absolute;background:none;border:0;color:#fff;font-size:34px;cursor:pointer;padding:12px 16px;line-height:1}
+.lb .x{top:calc(env(safe-area-inset-top,0px) + 8px);right:8px}.lb .pv{left:4px;top:50%;transform:translateY(-50%)}.lb .nx{right:4px;top:50%;transform:translateY(-50%)}
+.lb p{position:absolute;bottom:calc(env(safe-area-inset-bottom,0px) + 14px);left:0;right:0;text-align:center;color:#eee;font-size:14px;margin:0}
+
+/* inline image swap (edit mode) */
+.swap{position:absolute;z-index:5;right:10px;top:10px;background:#1b1b1b;color:#fff;border:0;border-radius:999px;padding:6px 12px;font:500 12.5px var(--sans);cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.3);display:none}
+body.editing .swap{display:block}
+body.editing .slot{outline:2px dashed rgba(47,90,76,.7);outline-offset:-2px}
+.hero-ph .swap{top:auto;bottom:130px;right:24px}
+.gallery figure{position:relative}
+.case-img{margin:0;background:var(--card);border-radius:6px;overflow:hidden;position:relative;box-shadow:0 1px 0 var(--line),0 14px 34px -26px rgba(60,40,20,.45);cursor:zoom-in}
+.case-img img{width:100%;height:auto}
+.case-img figcaption{font-size:13px;color:var(--ink-2);padding:8px 14px 12px}
+.admin-link{background:none;border:0;color:inherit;font:inherit;cursor:pointer;text-decoration:underline;padding:0}
+/* admin (static build: editing happens in Pages CMS) */
+.edit-fab,.panel{display:none!important}
+.edit-fab{position:fixed;right:20px;bottom:calc(env(safe-area-inset-bottom,0px) + 20px);z-index:40;background:#1b1b1b;color:#fff;border:0;border-radius:999px;padding:12px 20px;font:500 15px var(--sans);cursor:pointer;box-shadow:0 6px 24px rgba(0,0,0,.25);display:none}
+.panel{position:fixed;top:0;right:0;bottom:0;width:min(520px,100%);z-index:80;background:#FFFDF9;color:#1b1b1b;border-left:1px solid #e6dfd4;display:flex;flex-direction:column;transform:translateX(100%);transition:transform .28s ease;font-size:15px;line-height:1.55;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+.panel.on{transform:none}
+@media (prefers-reduced-motion:reduce){.panel{transition:none}html{scroll-behavior:auto}.sc .ph img{transition:none}}
+.p-head{display:flex;align-items:center;justify-content:space-between;padding:14px 18px;border-bottom:1px solid #eee6da}
+.p-tabs{display:flex;gap:4px;padding:10px 14px;border-bottom:1px solid #eee6da;overflow-x:auto}
+.p-tabs button{border:0;background:none;padding:6px 12px;border-radius:999px;font:500 14px var(--sans);color:#555;cursor:pointer;white-space:nowrap}
+.p-tabs button[aria-selected="true"]{background:#1b1b1b;color:#fff}
+.p-body{flex:1;overflow:auto;padding:18px}
+.p-foot{display:flex;gap:10px;align-items:center;padding:12px 18px;border-top:1px solid #eee6da}
+.p-foot .status{flex:1;font-size:13px;color:#666}
+.btn{border:1px solid #1b1b1b;background:#fff;color:#1b1b1b;border-radius:8px;padding:8px 14px;font:500 14px var(--sans);cursor:pointer}
+.btn.pri{background:#1b1b1b;color:#fff}.btn.sm{padding:4px 9px;font-size:13px}.btn.danger{border-color:#b3261e;color:#b3261e}.btn:disabled{opacity:.45}
+.fld{display:block;margin:0 0 14px}
+.fld span{display:block;font-size:13px;color:#666;margin-bottom:4px}
+.fld input,.fld textarea{width:100%;border:1px solid #dad2c5;border-radius:8px;padding:8px 10px;font:15px/1.5 var(--sans);background:#fff;color:#1b1b1b}
+.fld textarea{min-height:76px;resize:vertical}
+.card{border:1px solid #e8e0d3;border-radius:10px;margin-bottom:12px;background:#fff}
+.card>summary{list-style:none;cursor:pointer;padding:12px 14px;display:flex;align-items:center;gap:10px;font-weight:700}
+.card>summary::-webkit-details-marker{display:none}
+.card>summary .n{font:500 16px var(--lat);color:#999;width:24px}.card>summary .t{flex:1}
+.card .inner{padding:4px 14px 14px}
+.rw{display:flex;gap:6px;flex-wrap:wrap}
+.imgs{display:grid;gap:8px;margin:6px 0 12px}
+.imgrow{display:grid;grid-template-columns:64px 1fr auto;gap:8px;align-items:center;border:1px solid #eee6da;border-radius:8px;padding:6px}
+.imgrow img{width:64px;height:64px;object-fit:cover;border-radius:4px;background:#eee}
+.imgrow input{border:1px solid #e0d8ca;border-radius:6px;padding:5px 8px;font:14px var(--sans);width:100%}
+.imgrow .rw{flex-wrap:nowrap}
+.drop{border:1.5px dashed #c9bfae;border-radius:8px;padding:14px;text-align:center;color:#666;cursor:pointer;display:block;margin-bottom:14px}
+.drop.over{background:#f6efe4}
+.hint{font-size:13px;color:#777;margin:0 0 10px}
+.prev{width:100%;max-height:160px;object-fit:cover;border-radius:8px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<header class="hd">
+  <div class="wrap">
+    <a class="logo" href="#top"><b id="brand"></b><small id="brandSub"></small></a>
+    <nav id="nav" aria-label="主選單">
+      <a href="#top">首頁</a><a href="#services">服務項目</a><a href="#cases">成功案例</a><a href="#about">關於我們</a><a href="#contact">聯絡我們</a>
+    </nav>
+    <a class="btn-g" href="#contact">免費諮詢 <span aria-hidden="true">→</span></a>
+    <button class="menu" id="menu" aria-label="開啟選單" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-ph" id="heroPh"></div>
+    <div class="hero-wash" aria-hidden="true"></div>
+    <svg class="hero-curve" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true"><path d="M0,110 L0,70 C360,20 620,120 960,70 C1180,38 1320,60 1440,40 L1440,110 Z"/></svg>
+    <div class="wrap">
+      <h1 class="pre" id="heroTitle"></h1>
+      <p class="sub pre" id="heroSub"></p>
+      <a class="btn-g" href="#services">了解我們的服務 <span aria-hidden="true">→</span></a>
+      <p class="tag" id="heroTag"></p>
+    </div>
+    <div class="script" id="heroScript" aria-hidden="true"></div>
+  </section>
+
+  <section class="services" id="services">
+    <div class="wrap">
+      <div class="sec-h"><p class="eyebrow">Our services</p><h2>服務項目</h2><p id="svcSub"></p></div>
+      <div class="grid4" id="g4"></div>
+      <div class="grid3" id="g3"></div>
+    </div>
+  </section>
+
+  <section class="cases" id="cases">
+    <div class="wrap">
+      <div class="sec-h"><p class="eyebrow">Case studies</p><h2>成功案例</h2></div>
+      <div class="case">
+        <div class="charts" id="charts"></div>
+        <div class="case-r">
+          <h3 class="pre" id="caseTitle"></h3>
+          <p class="txt pre" id="caseText"></p>
+          <p class="pre" id="resTitle" style="margin:0 0 14px;font-weight:500"></p>
+          <div class="stats">
+            <div><b id="s1v"></b><span id="s1l"></span></div>
+            <div><b id="s2v"></b><span id="s2l"></span></div>
+          </div>
+          <small class="pre" id="caseCap"></small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="wrap">
+      <div class="about-box">
+        <div><p class="eyebrow">About us</p><h3 id="aboutTitle"></h3><p class="pre" id="aboutText"></p></div>
+        <div class="nums"><div><b id="nSvc"></b><span>項整合服務</span></div><div><b id="nImg"></b><span>件實際案例</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div><p class="eyebrow">Contact us</p><h2>和我們聊聊你的品牌</h2><p>諮詢不收費，告訴我們你的需求，我們會盡快回覆。</p><div class="script2" id="contactScript" aria-hidden="true"></div></div>
+      <dl id="contactList"></dl>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap"><span id="foot"></span><span><span id="handle"></span>　<button class="admin-link" id="adminLink">管理後台</button></span></div></footer>
+
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="shTitle">
+  <div class="bar"><span class="logo"><b id="shBrand" style="font-size:19px"></b></span>
+    <div class="n"><button class="icon" id="shPrev" aria-label="上一個服務">←</button><button class="icon" id="shNext" aria-label="下一個服務">→</button><button class="icon" id="shClose" aria-label="關閉">×</button></div></div>
+  <div class="in">
+    <header><div class="big" id="shNo"></div><div><h2 id="shTitle"></h2><p class="tg" id="shTags"></p><p class="ds pre" id="shDesc"></p></div></header>
+    <div class="gallery" id="shGal"></div>
+  </div>
+</div>
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="作品大圖">
+  <button class="x" id="lbX" aria-label="關閉">×</button><button class="pv" id="lbP" aria-label="上一張">‹</button>
+  <img id="lbImg" alt=""><button class="nx" id="lbN" aria-label="下一張">›</button><p id="lbCap"></p>
+</div>
+
+<button class="edit-fab" id="editFab">編輯網站</button>
+<aside class="panel" id="panel" aria-label="網站後台">
+  <div class="p-head"><strong>網站後台</strong><button class="btn sm" id="pClose">關閉</button></div>
+  <div class="p-tabs" role="tablist" id="pTabs">
+    <button role="tab" data-tab="hero" aria-selected="true">首頁</button>
+    <button role="tab" data-tab="svc" aria-selected="false">服務項目</button>
+    <button role="tab" data-tab="case" aria-selected="false">成功案例</button>
+    <button role="tab" data-tab="about" aria-selected="false">關於我們</button>
+    <button role="tab" data-tab="contact" aria-selected="false">聯絡資訊</button>
+  </div>
+  <div class="p-body" id="pBody"></div>
+  <div class="p-foot"><span class="status" id="pStatus">修改會即時預覽，按「儲存並發布」後所有人才看得到。</span>
+    <button class="btn" id="pRevert">放棄變更</button><button class="btn pri" id="pSave">儲存並發布</button></div>
+</aside>
+
+<script>
+const DEFAULT={
+  brand:"雅居廚櫃",brandSub:"行銷企劃部",
+  hero:{title:"不只做行銷，\n我們陪你，一起讓品牌往前走。",sub:"從品牌策略、創意發想到實際執行，\n讓每一個想法，都真正發生。",tagline:"Marketing × Brand × Growth",script:"Brand\nGrow Together",handle:"@ya_chill.life",image:""},
+  servicesSub:"整合行銷資源，打造屬於你的品牌成長藍圖。",
+  servicesTitle:"每一個品牌，都值得被〔好好經營〕。",
+  servicesIntro:"我們是雅居集團的行銷團隊，長期經營旗下廚櫃、系統櫃與室內設計品牌，也協助餐飲、醫美、家居等不同產業客戶。",
+  services:[],
+  banner:{image:"",title:"用影像\n說好品牌故事",text:"",caption:""},
+  charts:[],caseImages:[],
+  results:{title:"近期成效：廣告投放代操客戶",s1v:"+160%",s1l:"3 個月內，月詢問量成長",s2v:"−60%",s2l:"訊息成本減少近六成"},
+  contact:{line:"@794wrlfd",phone:"0900-605-385",email:"hq.marcom@yaju.com.tw",instagram:"ya_chill.life"},
+  footer:"© 2026 雅居廚櫃 行銷企劃部"
+};
+let live=clone(DEFAULT),draft=null,db=null,assets=null,ref=null,editing=false;
+function clone(o){return JSON.parse(JSON.stringify(o))}
+const $=id=>document.getElementById(id);
+const blob=p=>p?String(p).replace(/^\/+/,""):"";
+const pad=n=>String(n).padStart(2,"0");
+const cur=()=>editing?draft:live;
+const short=t=>{const s=(t||"").split(/(?<=。)/)[0].trim();return s.length>40?s.slice(0,38)+"…":s};
+function imgEl(id,alt,lazy){const i=document.createElement("img");i.src=blob(id);i.alt=alt||"";if(lazy)i.loading="lazy";i.decoding="async";return i}
+function put(box,id){box.replaceChildren();if(id){const i=imgEl(id,"");i.onerror=()=>i.remove();box.append(i)}}
+function lines(el,t){el.replaceChildren();(t||"").split("\n").forEach(l=>{const s=document.createElement("span");s.textContent=l;el.append(s)})}
+function richTitle(el,txt){el.replaceChildren();(txt||"").split(/(〔[^〕]*〕)/).forEach(p=>{if(!p)return;
+  if(p.startsWith("〔")){const s=document.createElement("span");s.className="ac";s.textContent=p.slice(1,-1);el.append(s)}else el.append(document.createTextNode(p))})}
+
+function swapBtn(box,label,onId){const b=document.createElement("button");b.type="button";b.className="swap";b.textContent=label||"更換圖片";
+  b.onclick=e=>{e.preventDefault();e.stopPropagation();pickUpload(onId)};box.classList.add("slot");box.append(b)}
+function pickUpload(onId){if(!editing)return;if(!assets){status("這個檢視無法上傳圖片，請用擁有者或編輯者帳號開啟。");return}
+  const inp=document.createElement("input");inp.type="file";inp.accept="image/*";
+  inp.onchange=async()=>{const f=inp.files[0];if(!f)return;status("上傳中："+f.name);
+    try{const r=await assets.upload(f);onId(r.id);changed();buildPanel();status("已更換，記得按「儲存並發布」。")}
+    catch(e){status(e.code==="too_large"?"檔案超過 20MB，請壓縮後再上傳。":e.code==="unsupported_type"?"格式不支援，請用 JPG、PNG 或 WebP。":"上傳失敗，請再試一次。")}};
+  inp.click()}
+const coverOf=s=>s.cover||(s.images[0]&&s.images[0].id)||"";
+function card(s,i,kind){
+  const b=document.createElement("button");b.type="button";b.className="sc "+kind;b.setAttribute("aria-label","查看"+s.title+"作品");
+  const ph=document.createElement("div");ph.className="ph";const cv=coverOf(s);if(cv)ph.append(imgEl(cv,"",true));
+  if(editing)swapBtn(ph,"更換封面",id=>{draft.services[i].cover=id});
+  const body=document.createElement("div");body.className="body";
+  const no=document.createElement("span");no.className="no";no.textContent=pad(i+1);
+  const h=document.createElement("h3");h.textContent=s.title;
+  const p=document.createElement("p");p.textContent=short(s.desc);
+  const a=document.createElement("span");a.className="arr";a.textContent="→";a.setAttribute("aria-hidden","true");
+  body.append(no,h,p);b.append(ph,body,a);b.onclick=()=>openSheet(i);return b}
+
+function render(c){
+  $("brand").textContent=c.brand;$("brandSub").textContent=c.brandSub;$("shBrand").textContent=c.brand;
+  $("heroTitle").textContent=c.hero.title;$("heroSub").textContent=c.hero.sub;$("heroTag").textContent=c.hero.tagline;
+  lines($("heroScript"),c.hero.script);put($("heroPh"),c.hero.image);if(editing)swapBtn($("heroPh"),"更換首頁主圖",id=>{draft.hero.image=id});
+  document.body.classList.toggle("editing",editing);
+  $("contactScript").textContent=(c.hero.script||"").replace(/\n/g," ");
+  $("svcSub").textContent=c.servicesSub;
+  const g4=$("g4"),g3=$("g3");g4.replaceChildren();g3.replaceChildren();
+  c.services.forEach((s,i)=>(i<4?g4:g3).append(card(s,i,i<4?"v":"h")));
+  g3.style.display=c.services.length>4?"":"none";
+  renderCharts(c.charts,c.caseImages);
+  $("caseTitle").textContent=c.banner.title;$("caseText").textContent=c.banner.text;$("caseCap").textContent=c.banner.caption;
+  const r=c.results;$("resTitle").textContent=r.title;$("s1v").textContent=r.s1v;$("s1l").textContent=r.s1l;$("s2v").textContent=r.s2v;$("s2l").textContent=r.s2l;
+  richTitle($("aboutTitle"),c.servicesTitle);$("aboutText").textContent=c.servicesIntro;
+  $("nSvc").textContent=pad(c.services.length);$("nImg").textContent=c.services.reduce((n,s)=>n+s.images.length,0)+"+";
+  const ct=c.contact,dl=$("contactList");dl.replaceChildren();const ig=(ct.instagram||"").replace(/^@/,"");
+  [["LINE 官方帳號",ct.line,ct.line?"https://line.me/R/ti/p/"+encodeURIComponent(ct.line):""],
+   ["電話",ct.phone,ct.phone?"tel:"+ct.phone.replace(/[^\d+]/g,""):""],
+   ["Email",ct.email,ct.email?"mailto:"+ct.email:""],
+   ["Instagram",ig?"@"+ig:"",ig?"https://www.instagram.com/"+ig:""]].forEach(([k,v,href])=>{if(!v)return;
+    const w=document.createElement("div");const dt=document.createElement("dt");dt.textContent=k;const dd=document.createElement("dd");
+    const a=document.createElement("a");a.textContent=v;a.href=href;if(href.startsWith("http")){a.target="_blank";a.rel="noopener"}dd.append(a);w.append(dt,dd);dl.append(w)});
+  $("foot").textContent=c.footer;$("handle").textContent=c.hero.handle;
+  document.title=c.brand+" "+c.brandSub+"｜品牌行銷服務";
+  if($("sheet").classList.contains("on"))fillSheet();
+}
+
+/* charts */
+const nums=t=>String(t||"").split(/[,，、\s]+/).filter(Boolean);
+function nice(m){if(!(m>0))return 1;const p=Math.pow(10,Math.floor(Math.log10(m)));const f=m/p;return (f<=1?1:f<=2?2:f<=2.5?2.5:f<=4?4:f<=5?5:f<=8?8:10)*p}
+function fmt(v){return Number.isInteger(v)?String(v):v.toFixed(1)}
+function chartSVG(ch){
+  const L=nums(ch.labels),A=nums(ch.results).map(Number),B=nums(ch.cost).map(Number);
+  const n=Math.max(L.length,A.length,B.length);if(n<2)return null;
+  const W=600,H=250,ml=40,mr=40,mt=28,mb=30,pw=W-ml-mr,ph=H-mt-mb;
+  const ma=nice(Math.max(...A.filter(isFinite),0)*1.12),mbx=nice(Math.max(...B.filter(isFinite),0)*1.12);
+  const x=i=>ml+(n===1?pw/2:i*pw/(n-1)),ya=v=>mt+ph-v/ma*ph,yb=v=>mt+ph-v/mbx*ph;
+  const NS="http://www.w3.org/2000/svg",s=document.createElementNS(NS,"svg");s.setAttribute("viewBox",`0 0 ${W} ${H}`);s.setAttribute("role","img");
+  s.setAttribute("aria-label",(ch.title||"成效趨勢")+"：成果 "+A.join("、")+"；成果成本 "+B.join("、"));
+  const add=(t,a,txt)=>{const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);if(txt!=null)e.textContent=txt;s.append(e);return e};
+  const grid="var(--line)",tx="var(--ink-2)";
+  for(let k=0;k<=4;k++){const y=mt+ph*k/4;add("line",{x1:ml,x2:W-mr,y1:y,y2:y,stroke:grid,"stroke-dasharray":k===4?"":"3 4"});
+    add("text",{x:ml-8,y:y+4,"text-anchor":"end","font-size":11,fill:tx},fmt(ma*(4-k)/4));
+    add("text",{x:W-mr+8,y:y+4,"font-size":11,fill:tx},fmt(mbx*(4-k)/4))}
+  L.forEach((l,i)=>add("text",{x:x(i),y:H-8,"text-anchor":"middle","font-size":12,fill:tx},l));
+  [[A,ya,"c-res",-12],[B,yb,"c-cost",-12]].forEach(([arr,y,cls,dy],si)=>{
+    const pts=arr.map((v,i)=>isFinite(v)?[x(i),y(v)]:null).filter(Boolean);
+    const g=document.createElementNS(NS,"g");g.setAttribute("class",cls);s.append(g);
+    const pl=document.createElementNS(NS,"polyline");pl.setAttribute("points",pts.map(p=>p.join(",")).join(" "));
+    pl.setAttribute("fill","none");pl.setAttribute("stroke","var(--c)");pl.setAttribute("stroke-width","2.4");pl.setAttribute("stroke-linejoin","round");g.append(pl);
+    arr.forEach((v,i)=>{if(!isFinite(v))return;const cx=x(i),cy=y(v);
+      const c=document.createElementNS(NS,"circle");c.setAttribute("cx",cx);c.setAttribute("cy",cy);c.setAttribute("r",4.5);c.setAttribute("fill","var(--card)");c.setAttribute("stroke","var(--c)");c.setAttribute("stroke-width","2");g.append(c);
+      const other=si===0?B[i]:A[i],oy=si===0?yb(other):ya(other);
+      let ly=cy-12;if(isFinite(other)&&Math.abs(oy-cy)<26)ly=cy<oy?cy-12:cy+22;
+      const t=document.createElementNS(NS,"text");t.setAttribute("x",cx);t.setAttribute("y",ly);t.setAttribute("text-anchor",i===0?"start":i===n-1?"end":"middle");
+      t.setAttribute("font-size",13);t.setAttribute("font-weight",700);t.setAttribute("fill","var(--c)");t.textContent=fmt(v);g.append(t)})});
+  return s}
+function renderCharts(list,imgs){const box=$("charts");box.replaceChildren();
+  (list||[]).forEach(ch=>{const svg=chartSVG(ch);if(!svg)return;const d=document.createElement("div");d.className="chart";
+    const h=document.createElement("h4");h.textContent=ch.title||"成果與成果成本趨勢";
+    const lg=document.createElement("div");lg.className="lg";lg.innerHTML='<span class="c-res"><i style="background:var(--c)"></i>成果</span><span class="c-cost"><i style="background:var(--c)"></i>成果成本</span>';
+    d.append(h,svg,lg);box.append(d)});
+  (imgs||[]).forEach((im,k)=>{const f=document.createElement("figure");f.className="case-img";const i=imgEl(im.id,im.caption||"案例圖片",true);i.onerror=()=>f.remove();f.append(i);
+    if(im.caption){const fc=document.createElement("figcaption");fc.textContent=im.caption;f.append(fc)}
+    f.onclick=()=>{if(!editing)openLB(imgs,k)};if(editing)swapBtn(f,"更換圖片",id=>{draft.caseImages[k].id=id});box.append(f)});
+  if(!box.children.length){const e=document.createElement("div");e.className="chart";e.style.cssText="padding:48px;text-align:center;color:var(--ink-2)";e.textContent="成效圖表整理中";box.append(e)}}
+
+/* mobile menu */
+$("menu").onclick=()=>{const on=$("nav").classList.toggle("on");$("menu").setAttribute("aria-expanded",on)};
+$("nav").onclick=e=>{if(e.target.tagName==="A"){$("nav").classList.remove("on");$("menu").setAttribute("aria-expanded","false")}};
+
+/* detail sheet */
+let shI=0;
+function openSheet(i){shI=i;fillSheet();$("sheet").classList.add("on");$("sheet").scrollTop=0;document.body.style.overflow="hidden";$("shClose").focus()}
+function closeSheet(){$("sheet").classList.remove("on");document.body.style.overflow=""}
+function fillSheet(){const c=cur(),s=c.services[shI];if(!s){closeSheet();return}
+  $("shNo").textContent=pad(shI+1);$("shTitle").textContent=s.title;$("shTags").textContent=(s.tags||"").replace(/[｜|]/g,"　/　");$("shDesc").textContent=s.desc;
+  const g=$("shGal");g.replaceChildren();
+  if(!s.images.length){const e=document.createElement("div");e.className="empty";e.textContent="作品圖片整理中";g.append(e)}
+  s.images.forEach((im,k)=>{const f=document.createElement("figure");f.tabIndex=0;const i=imgEl(im.id,im.caption||s.title,true);i.onerror=()=>f.remove();f.append(i);
+    if(editing){const si=shI;swapBtn(f,"更換圖片",id=>{draft.services[si].images[k].id=id})}
+    if(im.caption){const fc=document.createElement("figcaption");fc.textContent=im.caption;f.append(fc)}
+    const o=()=>openLB(s.images,k);f.onclick=o;f.onkeydown=e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();o()}};g.append(f)})}
+$("shClose").onclick=closeSheet;
+$("shPrev").onclick=()=>{const n=cur().services.length;shI=(shI-1+n)%n;fillSheet();$("sheet").scrollTop=0};
+$("shNext").onclick=()=>{const n=cur().services.length;shI=(shI+1)%n;fillSheet();$("sheet").scrollTop=0};
+
+/* lightbox */
+let lbList=[],lbI=0;
+function openLB(l,i){lbList=l;lbI=i;showLB();$("lb").classList.add("on");$("lbX").focus()}
+function showLB(){const im=lbList[lbI];$("lbImg").src=blob(im.id);$("lbImg").alt=im.caption||"";$("lbCap").textContent=(im.caption?im.caption+"　":"")+(lbI+1)+" / "+lbList.length}
+$("lbX").onclick=()=>$("lb").classList.remove("on");
+$("lbP").onclick=()=>{lbI=(lbI-1+lbList.length)%lbList.length;showLB()};
+$("lbN").onclick=()=>{lbI=(lbI+1)%lbList.length;showLB()};
+$("lb").onclick=e=>{if(e.target.id==="lb")$("lb").classList.remove("on")};
+document.addEventListener("keydown",e=>{
+  if($("lb").classList.contains("on")){if(e.key==="Escape")$("lb").classList.remove("on");if(e.key==="ArrowLeft")$("lbP").click();if(e.key==="ArrowRight")$("lbN").click();return}
+  if($("sheet").classList.contains("on")&&e.key==="Escape")closeSheet()});
+
+/* data */
+function normalize(d){const c=clone(DEFAULT);if(!d)return c;Object.assign(c,d);
+  ["hero","banner","results","contact"].forEach(k=>c[k]=Object.assign(clone(DEFAULT[k]),d[k]||{}));
+  c.charts=Array.isArray(d.charts)?d.charts:[];c.caseImages=Array.isArray(d.caseImages)?d.caseImages:[];
+  c.services=(d.services||[]).map(s=>({title:s.title||"",tags:s.tags||"",desc:s.desc||"",cover:s.cover||"",images:Array.isArray(s.images)?s.images:[]}));return c}
+render(live);
+fetch("content.json",{cache:"no-cache"}).then(r=>r.json()).then(d=>{live=normalize(d);render(live)}).catch(()=>{});
+
+/* admin */
+let tab="hero",openSvc=0;
+let canEditFlag=false,ready=false;
+function openAdmin(){if(!ready)return;
+  if(!canEditFlag){alert("後台只開放給這個網站的擁有者與編輯者。請用擁有者帳號登入 claude.ai 後開啟這個網址。");return}
+  $("editFab").click()}
+$("adminLink").onclick=()=>window.open("https://app.pagescms.org","_blank","noopener");
+window.addEventListener("hashchange",()=>{if(location.hash==="#admin")openAdmin()});
+$("editFab").onclick=()=>{if(editing)return;draft=clone(live);editing=true;$("panel").classList.add("on");$("editFab").style.display="none";render(draft);buildPanel()};
+$("pClose").onclick=()=>{if(JSON.stringify(draft)!==JSON.stringify(live)&&!confirm("有尚未儲存的變更，確定關閉？變更會被捨棄。"))return;
+  editing=false;draft=null;render(live);$("panel").classList.remove("on");$("editFab").style.display="block"};
+$("pRevert").onclick=()=>{draft=clone(live);render(draft);buildPanel();status("已放棄變更。")};
+$("pSave").onclick=async()=>{const b=$("pSave");b.disabled=true;status("儲存中…");
+  try{await ref.set(draft);live=clone(draft);status("已發布，所有訪客現在看得到新版本。")}
+  catch(e){status(e&&e.code==="invalid_argument"?"你沒有權限儲存這個網站。":e&&e.code==="quota_exceeded"?"資料量已達上限，請刪減內容後再試。":"儲存失敗，請稍後再試一次。")}
+  b.disabled=false};
+document.querySelectorAll("#pTabs button").forEach(b=>b.onclick=()=>{tab=b.dataset.tab;document.querySelectorAll("#pTabs button").forEach(x=>x.setAttribute("aria-selected",x===b));buildPanel()});
+function status(t){$("pStatus").textContent=t}
+function changed(){render(draft);status("有尚未儲存的變更。")}
+function el(t,c,x){const e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e}
+function fld(label,o,k,multi){const l=el("label","fld");const s=el("span",null,label);const i=document.createElement(multi?"textarea":"input");i.value=o[k]||"";i.oninput=()=>{o[k]=i.value;changed()};l.append(s,i);return l}
+function button(t,fn,c){const b=el("button","btn sm "+(c||""),t);b.type="button";b.onclick=fn;return b}
+function move(a,i,d){const j=i+d;if(j<0||j>=a.length)return false;[a[i],a[j]]=[a[j],a[i]];return true}
+function uploader(onDone,multiple){
+  const lab=el("label","drop",assets?"點此或拖曳圖片上傳（JPG／PNG／WebP，單檔 20MB 內）":"這個檢視無法上傳圖片");if(!assets)return lab;
+  const inp=document.createElement("input");inp.type="file";inp.accept="image/*";inp.multiple=!!multiple;inp.hidden=true;lab.append(inp);
+  const go=async fs=>{for(const f of fs){status("上傳中："+f.name);
+      try{const r=await assets.upload(f);onDone(r.id)}catch(e){status(e.code==="too_large"?f.name+" 超過 20MB，請壓縮後再上傳。":e.code==="unsupported_type"?f.name+" 格式不支援。":e.code==="quota_or_state"?"圖片空間已滿，請先刪除不用的圖片。":f.name+" 上傳失敗，請再試一次。");return}}
+    status("上傳完成，記得按「儲存並發布」。")};
+  inp.onchange=()=>{go([...inp.files]);inp.value=""};
+  lab.ondragover=e=>{e.preventDefault();lab.classList.add("over")};lab.ondragleave=()=>lab.classList.remove("over");
+  lab.ondrop=e=>{e.preventDefault();lab.classList.remove("over");go([...e.dataTransfer.files].filter(f=>f.type.startsWith("image/")))};return lab}
+function imagePicker(o,k,label){const w=el("div");w.append(el("p","hint",label));
+  if(o[k]){const p=el("img","prev");p.src=blob(o[k]);p.alt="";const rm=button("移除這張圖",()=>{o[k]="";changed();buildPanel()},"danger");rm.style.marginBottom="8px";w.append(p,rm)}
+  w.append(uploader(id=>{o[k]=id;changed();buildPanel()},false));return w}
+function imgList(arr,label,parent){parent.append(el("p","hint",label+"（"+arr.length+" 張）"));const l=el("div","imgs");
+  arr.forEach((im,k)=>{const r=el("div","imgrow");const t=document.createElement("img");t.src=blob(im.id);t.alt="";
+    const cp=document.createElement("input");cp.placeholder="圖說（可留空）";cp.value=im.caption||"";cp.oninput=()=>{im.caption=cp.value;changed()};
+    const ct=el("div","rw");ct.append(button("換",()=>pickUpload(id=>{im.id=id})),button("↑",()=>{if(move(arr,k,-1)){changed();buildPanel()}}),button("↓",()=>{if(move(arr,k,1)){changed();buildPanel()}}),button("刪",()=>{arr.splice(k,1);changed();buildPanel()},"danger"));
+    r.append(t,cp,ct);l.append(r)});parent.append(l,uploader(id=>{arr.push({id,caption:""});changed();buildPanel()},true))}
+function buildPanel(){const b=$("pBody");b.replaceChildren();const D=draft;
+  if(tab==="hero"){b.append(imagePicker(D.hero,"image","首頁主圖（顯示在右側，左邊會自動淡入米色；建議橫式照片，寬 2000px 以上）"),
+    fld("品牌名稱",D,"brand"),fld("品牌副標",D,"brandSub"),fld("主標題",D.hero,"title",true),fld("副標",D.hero,"sub",true),
+    fld("英文手寫字（照片右下，可換行）",D.hero,"script",true),fld("主標下方英文小字",D.hero,"tagline"),fld("社群帳號（頁尾）",D.hero,"handle"),fld("頁尾文字",D,"footer"))}
+  if(tab==="svc"){b.append(fld("服務項目副標",D,"servicesSub"),el("p","hint","前 4 項以直式卡片排在第一列，其餘排在第二列。卡片上的短說明會自動取「說明」的第一句；第一張圖是卡片封面。"));
+    D.services.forEach((s,i)=>{const d=el("details","card");d.open=i===openSvc;d.ontoggle=()=>{if(d.open)openSvc=i};
+      const sm=el("summary");sm.append(el("span","n",pad(i+1)),el("span","t",s.title||"（未命名）"));const c=el("span","rw");
+      c.append(button("↑",e=>{e.preventDefault();if(move(D.services,i,-1)){openSvc=i-1;changed();buildPanel()}}),button("↓",e=>{e.preventDefault();if(move(D.services,i,1)){openSvc=i+1;changed();buildPanel()}}));
+      sm.append(c);d.append(sm);const inn=el("div","inner");
+      const tf=fld("服務名稱",s,"title");tf.querySelector("input").addEventListener("input",()=>sm.querySelector(".t").textContent=s.title||"（未命名）");
+      inn.append(tf,imagePicker(s,"cover","卡片封面（留空則自動用第一張作品圖）"),fld("標籤（用 ｜ 分隔，顯示在作品頁）",s,"tags"),fld("說明（第一句會顯示在卡片上）",s,"desc",true),el("p","hint","作品圖片（"+s.images.length+" 張）"));
+      const l=el("div","imgs");s.images.forEach((im,k)=>{const r=el("div","imgrow");const t=document.createElement("img");t.src=blob(im.id);t.alt="";
+        const cp=document.createElement("input");cp.placeholder="圖說（可留空）";cp.value=im.caption||"";cp.oninput=()=>{im.caption=cp.value;changed()};
+        const ct=el("div","rw");ct.append(button("換",()=>pickUpload(id=>{im.id=id})),button("↑",()=>{if(move(s.images,k,-1)){changed();buildPanel()}}),button("↓",()=>{if(move(s.images,k,1)){changed();buildPanel()}}),button("刪除",()=>{s.images.splice(k,1);changed();buildPanel()},"danger"));
+        r.append(t,cp,ct);l.append(r)});
+      inn.append(l,uploader(id=>{s.images.push({id,caption:""});changed();buildPanel()},true),
+        button("刪除這個服務項目",()=>{if(confirm("確定刪除「"+(s.title||"未命名")+"」？儲存後才會生效。")){D.services.splice(i,1);openSvc=-1;changed();buildPanel()}},"danger"));
+      d.append(inn);b.append(d)});
+    b.append(button("新增服務項目",()=>{D.services.push({title:"新服務",tags:"",desc:"",images:[]});openSvc=D.services.length-1;changed();buildPanel()}))}
+  if(tab==="case"){const r=D.results;
+    b.append(el("p","hint","成效圖表：月份、成果、成果成本用逗號分隔，三組數量要一樣。左軸是成果、右軸是成果成本，刻度會自動計算。"));
+    D.charts.forEach((ch,i)=>{const d=el("details","card");d.open=true;const sm=el("summary");sm.append(el("span","n",pad(i+1)),el("span","t",ch.title||"圖表"));d.append(sm);
+      const inn=el("div","inner");inn.append(fld("圖表標題",ch,"title"),fld("月份（例：04月, 05月, 06月）",ch,"labels"),fld("成果（例：115, 151, 180）",ch,"results"),fld("成果成本（例：122.3, 102, 83.5）",ch,"cost"),
+        button("刪除這張圖表",()=>{if(confirm("確定刪除這張圖表？儲存後才會生效。")){D.charts.splice(i,1);changed();buildPanel()}},"danger"));d.append(inn);b.append(d)});
+    imgList(D.caseImages,"案例圖片（顯示在圖表下方，例如廣告素材、後台截圖）",b);
+    const add=button("新增圖表",()=>{D.charts.push({title:"成果與成果成本趨勢",labels:"",results:"",cost:""});changed();buildPanel()});add.style.marginBottom="18px";b.append(add);
+    b.append(fld("案例標題",D.banner,"title",true),fld("案例說明",D.banner,"text",true),
+    fld("成效標題",r,"title"),fld("數據一",r,"s1v"),fld("數據一說明",r,"s1l"),fld("數據二",r,"s2v"),fld("數據二說明",r,"s2l"),fld("底部小字",D.banner,"caption",true))}
+  if(tab==="about"){b.append(el("p","hint","大標題中用〔 〕框起來的字會變成綠色，例如：讓品牌〔被看見〕。"),fld("大標題",D,"servicesTitle",true),fld("內文",D,"servicesIntro",true))}
+  if(tab==="contact"){const c=D.contact;b.append(el("p","hint","留空的欄位不會顯示在網站上。"),fld("LINE 官方帳號 ID",c,"line"),fld("電話",c,"phone"),fld("Email",c,"email"),fld("Instagram 帳號（不含 @）",c,"instagram"))}
+}
+</script>
+</body>
+</html>
